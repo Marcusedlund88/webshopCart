@@ -412,10 +412,13 @@ const productDiv = document.querySelector('.products-grid');
 function makeCart(){
     document.querySelector('.total-amount-cart').innerHTML = '';
     let cartSum = JSON.parse(localStorage.getItem('cart'));
-    let cart2 = localStorage.getItem('cart');
-    
+
+    if(cartSum != null){
     document.querySelector('.total-amount-cart').textContent = 'Total: $'+getTotalAmount(cartSum).toFixed(2);;
-   
+    }
+    else{
+        document.querySelector('.total-amount-cart').textContent = 'Total: $0'
+    }
 
     existingCart = document.querySelector('.top-container-cart');   
     existingCart.querySelectorAll(':not(template)').forEach(e => e.remove());
@@ -704,7 +707,9 @@ popUpBuyBtn.addEventListener('click',()=>{
     let item = new Item(imagePath,descritionFromDiv , quantity, priceFromDiv.textContent); 
 
     let cart = JSON.parse(localStorage.getItem('cart'));
+    if(cart != null){
     let totalSum = getTotalAmount(cart);
+    }
 
     if(cart != null){
     cart.forEach(item => {
