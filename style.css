@@ -425,6 +425,7 @@
         text-transform: uppercase;
         display: flex;
         padding-left: 10%;
+        cursor: pointer;
     }
     .category-menu ul li a{
         color: black;
