@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <title>Web Store</title>
+</head>
+<body>
+ <div class="loading-background">
+  <div class="on-enter">
+    <div class="wind-smoke">
+    </div>
+  </div>
+</div>
+    <div class="popup-background">
+    <div class="product-popup">
+        <div class="invicible-data-storage">
+        </div>
+        <button class="burger-product-button" id="close-burger-product-button">
+            <span class="close-pop-up-span">
+                <span class="line-one-close-product" id="line-one-close-product-id"></span>
+                <span class="line-two-close-product" id="line-two-close-product-id"></span>
+                <span class="line-three-close-product" id="line-three-close-product-id"></span>
+            </span>
+        </button>
+
+        <div class="top-container">
+            <div class="top-left-container"></div>
+            <div class="top-right-container">
+                <div class="top-container"></div>
+                <div class="bottom-container">
+                    <button class="quantity-button">Check-out</button>
+                    <button class="buy-product-button">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-container">
+
+            <div class="swiper">
+         <div class = "swiper-wrapper">
+         
+         </div>
+                
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+        </div>
+
+
+
+        </div>
+    <div class="login-menu" id="login-menu-id">
+        <div class="left-container">
+            <form action="#" id="sign-in-id">
+                <div class="is-user" id="is-user-id">
+                    <div class="top-form">
+                    </div>
+                    <div class="middle-form">
+                        <h1>Sign in</h1>
+                        <input type="email" placeholder="Email" id="form-username">
+                        <input type="password" placeholder="Password" id="form-password">
+                        <a href="#">Forgot your password?</a>
+                    </div>
+                    <div class="bottom-form">
+                        <button id="sign-in-button">Sign in</button>
+                    </div>
+                </div>
+                <div class="not-user-welcome" id="not-user-welcome-id">
+                    <div class="top-form">
+                    </div>
+                    <div class="middle-form">
+                        <h1>Welcome</h1>
+                        <p>Or login in as a guest</p>
+                        <div class="bottom-form">
+
+                        </div>
+                    </div>
+                 </div>  
+            </form>
+        </div>
+
+        <div class="right-container">
+            <div class="close-button-login">
+                <button id="sign-in-close-button-id">
+                    <span class="line-one-sign" id="line-one-sign-id"></span>
+                    <span class="line-two-sign" id="line-two-sign-id"></span>
+                    <span class="line-three-sign" id="line-three-sign-id"></span>
+                </button>
+            </div>
+
+            <form action="#" id="sign-up-id">
+                <div class="not-user" id="not-user-id">
+                    <div class="top-form">
+
+                    </div>
+                    <div class="middle-form">
+                        <h1>Not a mate yet?</h1>
+                        <p>Dont worry! Just enter your details!</p>
+                    </div>
+                    <div class="bottom-form">
+                        <button id="sign-up-button">Sign up</button>
+                    </div>
+                </div>
+                <div class="not-user-info" id="not-user-info-id">
+                    <div class="top-form">
+
+                    </div>
+                    <div class="middle-form">
+                        <div class="form-container">
+                            <h1>Enter your details</h1>
+                            <div id="validate-form">
+                              <div>
+                                <input
+                                  type="text"
+                                  id="form-first-name"
+                                  name="name"
+                                  autocomplete="off"
+                                  required
+                                >
+                                <span class="error-form" id="fname-error-message"></span>
+                                <label id="name">Name</label>
+                              </div>
+                              <div>
+                                <input
+                                  type="text"
+                                  id="form-email"
+                                  name="email"
+                                  autocomplete="off"
+                                  required
+                                  >
+                                <span class="error-form" id="email-error-message"></span>
+                                <label id="email">Email</label>
+                              </div>
+                              <div>
+                                <input
+                                  type="text"
+                                  id="form-phone"
+                                  name="phone"
+                                  autocomplete="off"
+                                  required
+                                  >
+                                <span class="error-form" id="phone-error-message"></span>
+                                <label id="phone">Phone number</label>
+                              </div>
+                              <div>
+                                <input
+                                  type="text"
+                                  id="form-address"
+                                  name="address"
+                                  autocomplete="off"
+                                  required
+                                  >
+                                <span class="error-form" id="address-error-message"></span>
+                                <label id="address">Delivery Address</label>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="bottom-form">
+                        <button id="sign-up-button-info">Sign up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <section class="section-one" id="sectionOne">
+    <div class="burger-menu" id="burger-menu">
+        <div class="top-container">
+            <button class="burger" id="close-burger">
+                <span id="close-burger-id">
+                <span class="line-one-close" id="line-one-close-id"></span>
+                <span class="line-two-close" id="line-two-close-id"></span>
+                <span class="line-three-close" id="line-three-close-id"></span>
+            </span>
+            </button>
+        </div>
+        <div class="person-category-menu">
+
+        </div>
+        <div class="category-menu">
+            <ul>
+            </ul>
+        </div>
+        <div class="welcome-user" id="welcome-user-id">
+            <div class="if-user">
+                <h2>Hello there!</h2>
+                <a href="#">Log out</a>
+            </div>
+            <div class="if-not-user">
+                <ul>
+                    <li><h2>Hello there!</h2></li>
+                    <li>
+                        <a id="go-to-signup" href="#">Join us</a>
+                    </li>
+                    <li>
+                        <a id="go-to-login" href="#">Allready with us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<nav>
+    <div class="top-container">
+        <div class="left-container">
+            <button class="burger" id="burger">
+                <span class="line-one"></span>
+            </button>
+        </div>
+        <div class="center-container">
+            <a href="index.html">click</a>
+        </div>
+        <div class="right-container">
+            <ul>
+           
+            </ul>
+            <div class="search-box">
+                <input type="search" placeholder="Search" id="search-field">
+                <span class="search-icon">
+                    <button class="search-button" id="search-button-id">
+                    <ion-icon name="search"></ion-icon>
+                </button>
+                </span>
+            </div>
+            <div class="padding-container">
+
+            </div>
+            <button class="cart-button" id="cart-button-id"><ion-icon name="cart-outline"></ion-icon></button>
+        </div>
+    </div>
+</nav>
+<div class="section-one-main">
+    <div class="hero">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide" id="ss-one"></div>
+              <div class="swiper-slide" id="ss-two"></div>
+              <div class="swiper-slide" id="ss-three"></div>
+              <div class="swiper-slide" id="ss-four"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+    </div>
+    <div class="cart-menu" id="cart-menu-id">
+        <div class="top-container">
+            <button class="cart-button-close" id="cart-button-close-id">
+                <span class="line-one-cart" id="line-one-cart-id"></span>
+                <span class="line-two-cart" id="line-two-cart-id"></span>
+                <span class="line-three-cart" id="line-three-cart-id"></span>
+            </button>
+        </div>
+        <div class="cart-nav">
+            <div class="description">Description</div>
+           <div class="quantity">Quantity</div>
+           <div class="remove">Remove</div>
+           <div class="price">Price</div>
+        </div>
+<div class="background-cart">
+  <div class="cart-container">
+    <div class="top-container-cart" id="top-container-cart-id">
+      <template>
+      <div class="cart-item">
+        <div class="item-description">
+          <div class="thumbnail">
+            <img src="" alt="">
+          </div>
+          <div class="text">
+            <p></p>
+          </div>
+        </div>
+        <div class="quantity-item">
+          <button class="subtract"> - </button>
+          <div class="quantity-int"></div>
+          <button class="add"> + </button>
+        </div>
+        <div class="remove-item">
+        <button>Remove</button>
+        </div>
+      <div class="price-item">Price</div>
+      </div>
+</template>
+    </div>
+  </div>
+</div>
+<div class="bottom-container">
+    <div class="total-amount-cart"></div>
+    <button class="check-out">
+      Check-out
+    </button>
+    
+  </div>
+    </div>
+</div>
+
+
+
+</section>
+<section class="section-two" id="section-two-id">
+
+<div class="section-two-main">
+    <div class="filter-bar">
+        <div class="left-container">
+                <div class="drop-down">
+                    <button> 
+                        <span class="burger-span">
+                            <span id="filter-line-one"></span>
+                            <span id="filter-line-two"></span>
+                            <span id="filter-line-three"></span>
+                        </span>
+                        <span>
+                            Filter
+                    </span>
+                        </button>
+                </div>
+        </div>    
+        <div class="center-container">
+        </div>
+        <div class="right-container">
+        </div>
+    </div>
+    <div class="drop-down-list">
+        <ul></ul>
+    </div>
+    <div class="products-grid" id="products-grid-id">
+        
+    </div>
+</div>
+</section>
+<section class="section-three">
+    <div class="section-three-main">
+        
+    </div>
+   
+   
+    <footer class="footer">
+        <div class="footer-top-container">
+                <div class="left-container">
+                    <h2>Hjälp & Information</h2>
+                    <ul> 
+                        <li>alt1</li>
+                        <li>alt2</li>
+                        <li>alt3</li>
+                        <li>alt4</li>
+                        <li>alt5</li>
+                    </ul>
+                </div>
+                <div class="center-container">
+                    <h2>Om oss</h2>
+                    <ul>
+                        <li>alt1</li>
+                        <li>alt2</li>
+                        <li>alt3</li>
+                        <li>alt4</li>
+                        <li>alt5</li>
+                    </ul>
+                </div>
+                <div class="right-container">
+                    <h2>Mer från oss</h2>
+                    <ul>
+                        <li>alt1</li>
+                        <li>alt2</li>
+                        <li>alt3</li>
+                        <li>alt4</li>
+                        <li>alt5</li>
+                    </ul>
+                </div>
+        </div>
+        <div class="footer-bottom-container">
+            <div class="left-container">
+                <h2>2023 MM &#169; </h2>
+            </div>
+            <div class="right-container">
+                <a href="#">MM uppgifter</a>
+                <a href="#">Sekretess och cookies</a>
+                <a href="#">Användarvillkor</a>
+                <a href="#">Tillgänglighet</a>
+            </div>
+
+        </div>
+    </footer>
+    </section>
+
+    <div class="check-out-form">
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
+
+

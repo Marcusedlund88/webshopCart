@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <title>Web Store</title>
+</head>
+<body>
+<div class="loading-background">
+  <div class="on-enter">
+    <div class="wind-smoke">
+    </div>
+  </div>
+</div>
+
+    <div class="login-menu" id="login-menu-id">
+        <div class="left-container">
+            <form action="#" id="sign-in-id">
+                <div class="is-user" id="is-user-id">
+                    <div class="top-form">
+                    </div>
+                    <div class="middle-form">
+                        <h1>Sign in</h1>
+                        <input type="email" placeholder="Email" id="form-username">
+                        <input type="password" placeholder="Password" id="form-password">
+                        <a href="#">Forgot your password?</a>
+                    </div>
+                    <div class="bottom-form">
+                        <button id="sign-in-button">Sign in</button>
+                    </div>
+                </div>
+                <div class="not-user-welcome" id="not-user-welcome-id">
+                    <div class="top-form">
+                    </div>
+                    <div class="middle-form">
+                        <h1>Welcome</h1>
+                      
+                        <p>Or login in as a guest</p>
+                    </div>
+                        
+                        <div class="bottom-form">
+                            <button id="sign-in-guest-button">Guest</button>
+                        </div>
+                    </div>
+                    
+            </form>
+        </div>
+
+        <div class="right-container">
+            <div class="close-button-login">
+                <button id="sign-in-close-button-id">
+                    <span class="line-one-sign" id="line-one-sign-id"></span>
+                    <span class="line-two-sign" id="line-two-sign-id"></span>
+                    <span class="line-three-sign" id="line-three-sign-id"></span>
+                </button>
+            </div>
+
+            <form action="#" id="sign-up-id">
+                <div class="not-user" id="not-user-id">
+                    <div class="top-form">
+
+                    </div>
+                    <div class="middle-form">
+                        <h1>Not a mate yet?</h1>
+                        <p>Dont worry! Just enter your details!</p>
+                    </div>
+                    <div class="bottom-form">
+                        <button id="sign-up-button">Sign up</button>
+                    </div>
+                </div>
+                <div class="not-user-info" id="not-user-info-id">
+                    <div class="top-form">
+
+                    </div>
+                    <div class="middle-form">
+                        <div class="form-container">
+                            <h1>Enter your details</h1>
+                            <div id="validate-form">
+                              <div>
+                                <input
+                                  type="text"
+                                  id="form-first-name"
+                                  name="name"
+                                  autocomplete="off"
+                                  required
+                                >
+                                <span class="error-form" id="fname-error-message"></span>
+                                <label id="name">Name</label>
+                              </div>
+                              <div>
+                                <input
+                                  type="text"
+                                  id="form-email"
+                                  name="email"
+                                  autocomplete="off"
+                                  required
+                                  >
+                                <span class="error-form" id="email-error-message"></span>
+                                <label id="email">Email</label>
+                              </div>
+                              <div>
+                                <input
+                                  type="text"
+                                  id="form-phone"
+                                  name="phone"
+                                  autocomplete="off"
+                                  required
+                                  >
+                                <span class="error-form" id="phone-error-message"></span>
+                                <label id="phone">Phone number</label>
+                              </div>
+                              <div>
+                                <input
+                                  type="text"
+                                  id="form-address"
+                                  name="address"
+                                  autocomplete="off"
+                                  required
+                                  >
+                                <span class="error-form" id="address-error-message"></span>
+                                <label id="address">Delivery Address</label>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="bottom-form">
+                        <button id="sign-up-button-info">Sign up</button>
+                    </div>
+                </div>
+            </form>
+
+            <!--<form class = "not-user-information" action="#" id="not-user-information-id">
+                <div class="top-form">
+                </div>
+                <div class="middle-form">
+                    <h1>Welcome</h1>
+
+                    <div class="bottom-form">
+                    </div>
+                
+            </form>-->
+        </div>
+    </div>
+    <section class="section-one" id="sectionOne">
+    <div class="burger-menu" id="burger-menu">
+        <div class="top-container">
+            <button class="burger" id="close-burger">
+                <span id="close-burger-id">
+                <span class="line-one-close" id="line-one-close-id"></span>
+                <span class="line-two-close" id="line-two-close-id"></span>
+                <span class="line-three-close" id="line-three-close-id"></span>
+            </span>
+            </button>
+        </div>
+        <div class="person-category-menu">
+        </div>
+        <div class="category-menu">
+            <ul>
+            </ul>
+        </div>
+        <div class="welcome-user" id="welcome-user-id">
+            <div class="if-user">
+                <h2>Hello there!</h2>
+                <a href="#">Log out</a>
+            </div>
+            <div class="if-not-user">
+                <ul>
+                    <li><h2>Hello there!</h2></li>
+                    <li>
+                        <a id="go-to-signup" href="#">Join us</a>
+                    </li>
+                    <li>
+                        <a id="go-to-login" href="#">Allready with us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<nav>
+    <div class="top-container">
+        <div class="left-container">
+            <button class="burger" id="burger">
+                <span class="line-one"></span>
+            </button>
+        </div>
+        <div class="center-container">
+            <a href="index.html">click</a>
+        </div>
+        <div class="right-container">
+            <ul>
+           
+            </ul>
+            <div class="search-box">
+                <input type="search" placeholder="Search" id="search-field">
+                <span class="search-icon">
+                    <button class="search-button" id="search-button-id">
+                    <ion-icon name="search"></ion-icon>
+                </button>
+                </span>
+            </div>
+            <div class="padding-container">
+
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="section-one-main" id="section-one-check-out">
+      <div class="confirm-product">
+        <div class="swiper">
+            <div class = "swiper-wrapper">
+             
+            </div>
+                   
+                   <!-- If we need pagination -->
+                   <div class="swiper-pagination"></div>
+                 
+                   <!-- If we need navigation buttons -->
+                   <div class="swiper-button-prev"></div>
+                   <div class="swiper-button-next"></div>
+                 </div>
+            <div class="confirm">
+                <button class="discard">Discard</button>
+                <button class="proceed">Proceed</button>
+            </div>
+        </div>
+        <div class="check-out-form">
+            <h1>Order form </h1>
+                <form id="validate-form-check-out">
+                  <div>
+                    <input
+                      type="text"
+                      id="form-first-name-check-out"
+                      name="first-name"
+                      autocomplete="off"
+                      required
+                    >
+                    <span class="error-form" id="fname-error-message-check-out"></span>
+                    <label for="form-first-name-check-out">Name</label>
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      id="form-email-check-out"
+                      name="email"
+                      autocomplete="off"
+                      required
+                    >
+                    <span class="error-form" id="email-error-message-check-out"></span>
+                    <label for="form-email-check-out">Email</label>
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      id="form-phone-check-out"
+                      name="phone"
+                      autocomplete="off"
+                      required
+                    >
+                    <span class="error-form" id="phone-error-message-check-out"></span>
+                    <label for="form-phone-check-out">Phone number</label>
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      id="form-address-check-out"
+                      name="address"
+                      autocomplete="off"
+                      required
+                    >
+                    <span class="error-form" id="address-error-message-check-out"></span>
+                    <label for="form-address-check-out">Delivery Address</label>
+                  </div>
+                  <button id="send-btn">Place Order</button>
+                </form>
+              </div>
+              <div class="reciept">
+
+              </div>
+        </div>
+    <footer class="footer">
+        <div class="footer-top-container">
+                <div class="left-container">
+                    <h2>Hjälp & Information</h2>
+                    <ul> 
+                        <li>alt1</li>
+                        <li>alt2</li>
+                        <li>alt3</li>
+                        <li>alt4</li>
+                        <li>alt5</li>
+                    </ul>
+                </div>
+                <div class="center-container">
+                    <h2>Om oss</h2>
+                    <ul>
+                        <li>alt1</li>
+                        <li>alt2</li>
+                        <li>alt3</li>
+                        <li>alt4</li>
+                        <li>alt5</li>
+                    </ul>
+                </div>
+                <div class="right-container">
+                    <h2>Mer från oss</h2>
+                    <ul>
+                        <li>alt1</li>
+                        <li>alt2</li>
+                        <li>alt3</li>
+                        <li>alt4</li>
+                        <li>alt5</li>
+                    </ul>
+                </div>
+        </div>
+        <div class="footer-bottom-container">
+            <div class="left-container">
+                <h2>2023 MM &#169; </h2>
+            </div>
+            <div class="right-container">
+                <a href="#">MM uppgifter</a>
+                <a href="#">Sekretess och cookies</a>
+                <a href="#">Användarvillkor</a>
+                <a href="#">Tillgänglighet</a>
+            </div>
+
+        </div>
+    </footer>
+    </section>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
