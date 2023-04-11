@@ -247,7 +247,7 @@ if (!window.location.pathname.includes('verification')) {
                 opacity: '1',
                 transition:'width 0.5s, opacity .5s linear'
             });
-           
+        document.querySelector('.cart-menu .bottom-container .check-out').style.visibility = 'visible';
 
         makeCart();
 
@@ -268,7 +268,9 @@ if (!window.location.pathname.includes('verification')) {
             setTimeout(()=>{collapseMenu(cartMenu,'collapse');
             Object.assign(document.querySelector('.total-amount-cart').style,{
                 visibility: 'collapse',
-            });},2000);
+            });
+document.querySelector('.cart-menu .bottom-container .check-out').style.visibility = 'collapse';
+},2000);
     
         });
     }
