@@ -1199,6 +1199,8 @@
       font-size: xx-small;
       letter-spacing: 1px;
       border: 1px solid black;
+visibility: collapse;
+
     }
     .background-cart .cart-container .top-container-cart .cart-item{
       display: flex;
