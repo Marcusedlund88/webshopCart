@@ -982,7 +982,7 @@
         direction: ltr;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         grid-gap: 10px;
-        overflow: hidden;
+        overflow: scroll;
     }
     .section-two-main .products-grid div {
         display: block;
@@ -1104,7 +1104,7 @@
       width: 100vw;
       height: 50vh;
       display: flex;
-      overflow-y: hidden;
+      overflow-y: scroll;
       
     }
     .background-cart .cart-container{
